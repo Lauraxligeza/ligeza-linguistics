@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Industries | Ligeza Linguistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Industries supported by Ligeza Linguistics, including logistics, tourism, e-commerce, SaaS and professional services.">
+  <link rel="icon" type="image/png" sizes="32x32" href="../Logo2.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../Logo2.png">
+</head>
+<body>
+
+<div class="site-wrapper">
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo-container">
+          <a href="../index.html" class="logo-link">
+            <img src="../Logo1.png" alt="Ligeza Linguistics logo" class="logo-img">
+            Ligeza Linguistics
+          </a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <ul id="nav-links">
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Industries</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Industries We Support</h1>
+        <p>Market expansion expertise tailored to your sector's regulatory and commercial needs.</p>
+      </div>
+    </section>
+
+    <section class="container animate-load">
+      <div class="content-area">
+        <h2>Sector-Specific Localization Strategies</h2>
+        <p>
+          The terminology, tone, and cultural sensitivity required for a tourism brochure are vastly different from those needed for enterprise SaaS documentation. Our teams are pre-qualified with deep sector knowledge to ensure compliance, trust, and highly effective communication in every market.
+        </p>
+
+        <div class="service-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="service-card animate-load">
+            <h3 style="margin-top: 0;">E-commerce & Retail</h3>
+            <p>
+              Focus on conversion-optimized product listings, local payment term adaptation, and culturally appropriate marketing campaigns to minimize cart abandonment and boost sales abroad.
+            </p>
+          </div>
+          <div class="service-card animate-load">
+            <h3 style="margin-top: 0;">Software as a Service (SaaS)</h3>
+            <p>
+              Accurate localization of user interfaces (UI), technical documentation, and complex legal agreements. We ensure global scalability while meeting specific data protection and terminology standards in regulated markets.
+            </p>
+          </div>
+          <div class="service-card animate-load">
+            <h3 style="margin-top: 0;">Logistics & Supply Chain</h3>
+            <p>
+              Translating technical manuals, shipping documents, and compliance forms with precision. Critical for seamless global operations and clear communication between international hubs and regional agents.
+            </p>
+          </div>
+          <div class="service-card animate-load">
+            <h3 style="margin-top: 0;">Tourism & Hospitality</h3>
+            <p>
+              Creating evocative, culturally sensitive travel content, from destination guides to booking platforms. Our goal is to inspire trust and clearly communicate complex travel arrangements across multiple regions.
+            </p>
+          </div>
+        </div>
+
+        <p class="section-subtitle" style="margin-top: 40px; text-align: center;">
+          We primarily serve brands expanding into the lucrative and complex markets of **Europe**, **Asia**, and the **Middle East** due to our specialization in these regions.
+        </p>
+        <p class="section-subtitle">
+          If you operate in one of these sectors and are planning a market entry, product launch, or localization program, we can align on scope and next steps.
+        </p>
+        <a href="../index.html#contact" class="btn-primary">Request a consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <img src="../Logo3.png" alt="Ligeza Linguistics icon" class="footer-logo-icon">
+        <span>© <span id="year"></span> Ligeza Linguistics. All rights reserved.</span>
+      </div>
+      <div>International market expansion &amp; localization partner.</div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('open')) {
+          navLinks.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
