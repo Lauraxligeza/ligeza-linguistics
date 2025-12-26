@@ -2,18 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Content Manager</title>
 
-    <!-- Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
-
+    <!-- Must be set BEFORE loading Decap -->
     <script>
       window.CMS_MANUAL_INIT = true;
     </script>
+
+    <!-- Load Decap -->
+    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
   </head>
+
   <body>
     <script>
-      CMS.init();
+      // Force Decap to use the correct config path
+      CMS.init({ config: "/admin/config.yml" });
     </script>
   </body>
 </html>
