@@ -3,7 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <!-- Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
+
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
   </head>
-  <body></body>
+  <body>
+    <script>
+      CMS.init();
+    </script>
+  </body>
 </html>
