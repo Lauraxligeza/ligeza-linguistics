@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: Lauraxligeza/ligeza-linguistics
+  branch: main
+  auth_type: pkce
+  app_id: REPLACE_ME_LATER
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
