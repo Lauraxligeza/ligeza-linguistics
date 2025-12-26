@@ -3,7 +3,7 @@ backend:
   repo: Lauraxligeza/ligeza-linguistics
   branch: main
   auth_type: pkce
-  app_id: REPLACE_ME_LATER
+  app_id: Ov23lixtRfkbrs5qyDrS
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
