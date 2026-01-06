@@ -335,6 +335,45 @@
     .execution-list li {
       margin-bottom: 8px;
     }
+    .execution-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .execution-wrap {
+        padding: 0;
+      }
+    }
+    .execution-label {
+      margin-top: 12px;
+    }
+    .execution-list--primary {
+      list-style: none;
+      padding-left: 0;
+      margin: 18px auto 0;
+      display: grid;
+      gap: 12px;
+      text-align: left;
+    }
+    .execution-list--primary li {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 0;
+    }
+    .execution-list--primary li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .execution-note {
+      margin-top: 24px;
+      color: #0c1f3c;
+      text-align: center;
+    }
     .no-do-list {
       max-width: 520px;
       text-align: left;
