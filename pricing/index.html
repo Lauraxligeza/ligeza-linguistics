@@ -387,6 +387,39 @@
       max-width: 520px;
       text-align: left;
     }
+    .boundaries-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .boundaries-intro {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    .boundaries-list {
+      margin: 18px auto 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    .boundaries-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      color: var(--muted);
+    }
+    .boundaries-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .boundaries-close {
+      margin-top: 16px;
+      font-weight: 700;
+      color: #0c1f3c;
+    }
 
     .faq-grid {
       display: grid;
@@ -412,5 +445,8 @@
       line-height: 1.6;
     }
   </style>
+</body>
+</html>
+
 </body>
 </html>
