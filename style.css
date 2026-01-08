@@ -392,6 +392,21 @@ a { text-decoration: none; color: inherit; }
   margin: 0;
 }
 
+.service-card .service-note {
+  color: var(--muted);
+}
+
+.service-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.service-list li {
+  margin: 0 0 6px;
+  line-height: 1.6;
+}
+
 /* ---------- MARKETS ---------- */
 .markets { background: var(--white); }
 
