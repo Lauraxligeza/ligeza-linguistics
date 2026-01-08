@@ -3,12 +3,12 @@
   --bg: #f6f8fb;
   --surface: #eef1f6;
   --white: #ffffff;
-  --bg-dark: #0c1f3c; /* primary navy */
-  --accent: #f2a33b; /* warm brand gold */
+  --bg-dark: #0c1f3c;
+  --accent: #f2a33b; 
   --text: #0e1a2a;
   --muted: #666666;
   --border: #e6eaed;
-  --primary-soft: #e8edf5; /* pale navy-neutral for highlighted cards */
+  --primary-soft: #e8edf5; 
   --section-pad-desktop: 100px;
   --section-pad-mobile: 56px;
   --gap-title-lead: 16px;
@@ -29,7 +29,7 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
-  padding-top: 56px; /* offset for fixed nav */
+  padding-top: 56px; 
   font-size: 1rem;
 }
 
@@ -103,7 +103,6 @@ a { text-decoration: none; color: inherit; }
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 12px 20px;
 }
 
