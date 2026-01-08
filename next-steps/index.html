@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Next Steps - Ligeza Linguistics</title>
+  <meta name="description" content="Private engagement options for Ligeza Linguistics." />
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="nav-bar" id="navbar">
+      <div class="container nav-inner">
+        <a href="../index.html" class="logo">
+          <img src="../Logo1.png" alt="Ligeza Linguistics Logo" class="nav__logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../services/index.html">Services</a>
+          <a href="../markets/index.html">Markets</a>
+          <a href="../about/index.html">About</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../index.html#contact">Contact</a>
+          <a href="../index.html#contact" class="btn-nav">Book an Audit</a>
+        </nav>
+        <button class="hamburger" aria-label="open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--white next-steps-hero">
+        <div class="container hero-stack">
+          <h1 class="section-title center">Next Steps</h1>
+          <p class="section-lead center">Choose how you’d like to begin.</p>
+        </div>
+      </section>
+
+      <section class="section" id="options">
+        <div class="container">
+          <div class="service-grid next-steps-grid">
+            <article class="service-card next-steps-card next-steps-card--primary">
+              <h2>Written Audit</h2>
+              <p>
+                A market-specific written analysis of your messaging, structure, and trust signals. You’ll receive
+                confirmation and next steps within 24 hours.
+              </p>
+              <a href="#request" class="btn-primary">Initiate Audit</a>
+            </article>
+
+            <article class="service-card next-steps-card">
+              <h2>Strategy Call</h2>
+              <p>
+                For complex cases, custom expansion plans, or multi-market initiatives. A short call to confirm scope and fit.
+              </p>
+              <a href="#schedule" class="btn-primary">Schedule Call</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="request">
+        <div class="container section__narrow section__center">
+          <h2 class="section-title section-title--invert center">Audit &amp; Engagement Request</h2>
+          <p class="section-lead section-lead--invert center">
+            Share your goals and target markets, and we’ll confirm next steps within 24 hours.
+          </p>
+          <form action="../submit.php" method="POST" class="contact-form">
+            <input type="hidden" name="request_type" value="audit" />
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Work Email" required>
+            <input type="url" name="website" placeholder="Company Website">
+            <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
+            <button type="submit" class="btn-primary">Initiate Audit</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--white" id="schedule">
+        <div class="container">
+          <p class="section-label">Schedule</p>
+          <h2 class="section-title center">Book a Strategy Call</h2>
+          <div class="calendly-embed">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/laura-ligezalinguistics" style="min-width:320px;height:700px;"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <span class="footer__logo">Ligeza</span>
+          <p>Ac <span id="year"></span> Ligeza Linguistics. All rights reserved.</p>
+        </div>
+        <div class="footer__right">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', open);
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (navLinks.classList.contains('open')) {
+            navLinks.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }
+
+    let lastScroll = 0;
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 80) {
+          navbar.style.transform = currentScroll > lastScroll ? 'translateY(-100%)' : 'translateY(0)';
+        } else {
+          navbar.style.transform = 'translateY(0)';
+        }
+        lastScroll = currentScroll;
+      });
+    }
+  </script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <style>
+    .next-steps-hero {
+      background: linear-gradient(135deg, #f6f8fb, #eef2f8);
+      padding-top: 110px;
+      padding-bottom: 70px;
+    }
+    .hero-stack {
+      text-align: center;
+    }
+    .next-steps-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 980px;
+    }
+    @media (max-width: 768px) {
+      .next-steps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .next-steps-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .next-steps-card h2 {
+      margin: 0 0 4px;
+      font-size: 1.4rem;
+      font-family: var(--font-display);
+      color: var(--bg-dark);
+    }
+    .next-steps-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .next-steps-card .btn-primary {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+    .next-steps-card--primary {
+      border-color: rgba(242, 163, 59, 0.45);
+      box-shadow: 0 14px 30px rgba(10, 31, 66, 0.12);
+      background: #fffaf2;
+    }
+    .calendly-embed {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</body>
+</html>
