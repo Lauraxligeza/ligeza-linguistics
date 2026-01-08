@@ -289,14 +289,16 @@
             <h2 class="section-title--invert">Ready to See the Revenue Gap in Your Target Market?</h2>
             <p class="section-lead--invert">Book a 20 min strategy call. We’ll audit one market and show you exactly where translation fails and localization wins.</p>
             
-            <form action="../submit.php" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Work Email" required>
-                <input type="text" name="company" placeholder="Company Name" required>
-                <textarea name="message" placeholder="Which market is your primary growth target?" rows="4" required></textarea>
-                
-                <button type="submit" class="btn-primary">Book Your Market Audit</button>
-            </form>
+            <form action="https://formspree.io/f/mgowypjk" method="POST" class="contact-form">
+  <input type="hidden" name="request_type" value="audit">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Work Email" required>
+  <input type="url" name="website" placeholder="Company Website">
+  <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
+
+  <button type="submit" class="btn-primary">Initiate Audit</button>
+</form>
         </div>
     </section>
 
