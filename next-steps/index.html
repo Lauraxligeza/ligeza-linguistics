@@ -16,15 +16,15 @@
         <a href="../index.html" class="logo">
           <img src="../Logo1.png" alt="Ligeza Linguistics Logo" class="nav__logo" />
         </a>
-        <nav class="nav-links">
-          <a href="/index.html">Home</a>
-          <a href="/services/">Services</a>
-          <a href="/markets/">Markets</a>
-          <a href="/about/">About</a>
-          <a href="/blog/">Blog</a>
-          <a href="/contact/">Contact</a>
-          <a href="#contact" class="btn-nav">Book an Audit</a>
-        </nav>
+      <nav class="nav-links">
+      <a href="/services/">Services</a>
+      <a href="/markets/">Markets</a>
+      <a href="/about/">About</a>
+      <a href ="/pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="/next-steps/" class="btn-nav">Book an Audit</a>
+    </nav>
         <button class="hamburger" aria-label="open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -43,12 +43,21 @@
         <div class="container">
           <div class="service-grid next-steps-grid">
             <article class="service-card next-steps-card next-steps-card--primary">
-              <h2>Written Audit</h2>
+              <h2>Not sure where to start?</h2>
               <p>
-                A market-specific written analysis of your messaging, structure, and trust signals. You’ll receive
-                confirmation and next steps within 24 hours.
+                If you’re unsure which service fits your situation, you can message us with a specific question.
+                We’ll clarify scope and point you in the right direction — no commitment required.
               </p>
-              <a href="#request" class="btn-primary">Initiate Audit</a>
+              <a href="/contact/" class="btn-primary">Ask a Question</a>
+            </article>
+
+            <article class="service-card next-steps-card">
+              <h2>Not sure where to start?</h2>
+              <p>
+                If you’re unsure which service fits your situation, you can message us with a specific question.
+                We’ll clarify scope and point you in the right direction — no commitment required.
+              </p>
+              <a href="/contact/" class="btn-primary">Ask a Question</a>
             </article>
 
             <article class="service-card next-steps-card">
@@ -161,13 +170,11 @@
       text-align: center;
     }
     .next-steps-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      max-width: 980px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: 1100px;
     }
     @media (max-width: 768px) {
-      .next-steps-grid {
-        grid-template-columns: 1fr;
-      }
+      .next-steps-grid { grid-template-columns: 1fr; }
     }
     .next-steps-card {
       display: flex;
