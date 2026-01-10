@@ -20,7 +20,7 @@
                 <a href="/markets/">Markets</a>
                 <a href="/about/">About</a>
                 <a href="/blog/">Blog</a>
-                <a href="/Contact">Contact</a>
+                <a href="/contact">Contact</a>
                 <a href="/next-steps/" class="btn-nav">Request a Service</a>
       </nav>
     <button class="hamburger" aria-label="open menu" aria-expanded="false">
@@ -77,7 +77,7 @@ We correct positioning, messaging, and buyer flow so your business actually conv
                         <li>Delivered as ready-to-publish copy in your existing structure</li>
                     </ul>
                     <div class="service-cta">
-                        <a href="#" class="btn-primary">Start Market Entry</a>
+                        <a href="https://buy.stripe.com/14AdR98j3bmEb7h5rwcAo03" class="btn-primary">Start Market Entry</a>
                         <a href="/contact/" class="btn-secondary">Ask a Question</a>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ We correct positioning, messaging, and buyer flow so your business actually conv
                         <li>Delivered as revised, ready to publish copy</li>
                     </ul>
                     <div class="service-cta">
-                        <a href="#" class="btn-primary">Fix My Market Setup</a>
+                        <a href="https://buy.stripe.com/9B6bJ1dDn9ew5MX2fkcAo02" class="btn-primary">Fix My Market Setup</a>
                         <a href="/contact/" class="btn-secondary">Ask a Question</a>
                     </div>
                 </div>
@@ -122,11 +122,70 @@ We correct positioning, messaging, and buyer flow so your business actually conv
                         <li>Clear execution scope and delivery sequence agreed upfront</li>
                     </ul>
                     <div class="service-cta">
-                        <a href="#" class="btn-primary">Book a Short Call</a>
+                        <a href="/contact/" class="btn-primary">Book a Short Call</a>
                         <a href="/contact/" class="btn-secondary">Ask a Question</a>
                     </div>
                 </div>
             </div>
+            <h3 class="section-title center">Validation &amp; Decision Support</h3>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon-box icon-box--custom" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M4 19h16"></path>
+                        <path d="M6 17V7l6-3 6 3v10"></path>
+                        <path d="M9 12h6"></path>
+                        <path d="M9 15h6"></path>
+                      </svg>
+                    </div>
+                    <h3>4) Market Readiness Review</h3>
+                    <p>A structured evaluation to determine market fit before execution.</p>
+                    <p>Scope</p>
+                    <ul>
+                        <li>Assessment of one existing page for one target market</li>
+                        <li>Cultural alignment, trust signals, and positioning analysis</li>
+                        <li>Clear recommendation on readiness and next steps</li>
+                    </ul>
+                    <p>Format</p>
+                    <ul>
+                        <li>Written evaluation only</li>
+                        <li>No content changes or implementation</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://buy.stripe.com/00wdR9bvfbmEa3d9HMcAo01" class="btn-primary">Request review</a>
+                        <a href="/contact/" class="btn-secondary">Ask a Question</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box icon-box--custom" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M12 3l9 16H3l9-16z"></path>
+                        <path d="M12 9v4"></path>
+                        <circle cx="12" cy="17" r="1"></circle>
+                      </svg>
+                    </div>
+                    <h3>5) Market Risk Assessment</h3>
+                    <p>Pre execution analysis to identify critical market risks.</p>
+                    <p>Scope</p>
+                    <ul>
+                        <li>Review of one offer for one target market</li>
+                        <li>Identification of high risk assumptions and potential failure points</li>
+                        <li>Priority risks to address before market entry or scale</li>
+                    </ul>
+                    <p>Format</p>
+                    <ul>
+                        <li>Strategic assessment only</li>
+                        <li>No execution or asset delivery</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://buy.stripe.com/cNi00j56R8asdfpcTYcAo00" class="btn-primary">Request assessment</a>
+                        <a href="/contact/" class="btn-secondary">Ask a Question</a>
+                    </div>
+                </div>
+            </div>
+            <p class="section-lead center service-followup">
+                Unsure which service fits your situation? <a href="/contact/">Get in touch.</a>
+            </p>
         </div>
     </section>
 
@@ -526,6 +585,12 @@ We correct positioning, messaging, and buyer flow so your business actually conv
     gap: 6px;
     min-height: 220px;
 }
+.services .section-title + .service-grid {
+    margin-top: 24px;
+}
+.services .service-grid + .section-title {
+    margin-top: 48px;
+}
 .services .service-card h3 {
     font-weight: 700;
     margin-bottom: 8px;
@@ -577,6 +642,11 @@ We correct positioning, messaging, and buyer flow so your business actually conv
     transform: translateY(-1px);
     border-color: rgba(242, 163, 59, .6);
     color: var(--bg-dark);
+}
+.services .service-followup {
+    margin-top: 28px;
+    font-weight: 600;
+    text-align: center;
 }
 .deliverables-note {
     font-size: .95rem;
@@ -760,6 +830,35 @@ We correct positioning, messaging, and buyer flow so your business actually conv
     background: linear-gradient(140deg, #0c1f3c, #0a234a);
     color: #fff;
 }
-</style>
+  /* Match main hero background */
+  .page-header {
+    background: linear-gradient(140deg, #0d2040, #0a1833);
+    position: relative;
+    overflow: hidden;
+  }
+  .page-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../hero-map-bg.png") center/cover no-repeat;
+    background-color: rgba(12, 31, 60, .5);
+    background-blend-mode: overlay;
+    opacity: .18;
+  }
+  .page-header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(80% 80% at 20% 20%, rgba(242,163,59,.18), transparent 60%),
+      radial-gradient(70% 70% at 80% 10%, rgba(255,255,255,.10), transparent 55%);
+    pointer-events: none;
+  }
+  .page-header .header-grid,
+  .page-header .post-hero__inner {
+    position: relative;
+    z-index: 1;
+  }
+  </style>
 </body>
 </html>

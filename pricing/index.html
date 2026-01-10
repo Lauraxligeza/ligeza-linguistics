@@ -454,6 +454,35 @@
       color: var(--muted);
       line-height: 1.6;
     }
+    /* Match main hero background */
+  .page-header {
+    background: linear-gradient(140deg, #0d2040, #0a1833);
+    position: relative;
+    overflow: hidden;
+  }
+  .page-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../hero-map-bg.png") center/cover no-repeat;
+    background-color: rgba(12, 31, 60, .5);
+    background-blend-mode: overlay;
+    opacity: .18;
+  }
+  .page-header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(80% 80% at 20% 20%, rgba(242,163,59,.18), transparent 60%),
+      radial-gradient(70% 70% at 80% 10%, rgba(255,255,255,.10), transparent 55%);
+    pointer-events: none;
+  }
+  .page-header .header-grid,
+  .page-header .post-hero__inner {
+    position: relative;
+    z-index: 1;
+  }
   </style>
 </body>
 </html>
