@@ -372,6 +372,59 @@
       border-color: rgba(242, 163, 59, .6);
       color: var(--bg-dark);
     }
+    body {
+      background: #0c1f3c;
+    }
+    .section {
+      background: #0c1f3c;
+    }
+    .section-label {
+      color: var(--accent);
+    }
+    .section-title {
+      color: var(--white);
+    }
+    .section-lead {
+      color: rgba(255, 255, 255, 0.82);
+    }
+    .schedule-block .section-title {
+      color: var(--white);
+    }
+    .schedule-block .section-lead {
+      color: rgba(255, 255, 255, 0.82);
+    }
+    .calendly-embed {
+      background: rgba(7, 16, 32, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(4, 10, 20, 0.45);
+      padding: 12px;
+    }
+    .schedule-actions .btn-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: var(--white);
+      background: transparent;
+    }
+    .schedule-actions .btn-secondary:hover {
+      color: var(--white);
+    }
+    .contact {
+      background: #0c1f3c;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(7, 16, 32, 0.45);
+      color: var(--white);
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .contact-direct {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(7, 16, 32, 0.5);
+    }
     /* Match main hero background */
   .page-header {
     background: linear-gradient(140deg, #0d2040, #0a1833);
@@ -401,6 +454,73 @@
     position: relative;
     z-index: 1;
   }
-  </style>
+  
+/* premium-page-header */
+.page-header {
+  background:
+    radial-gradient(140% 120% at 15% 5%, #1a3158 0%, #0c1f3c 45%, #061127 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../hero-map-bg.png") center/cover no-repeat;
+  background-color: rgba(12, 31, 60, 0.5);
+  background-blend-mode: overlay;
+  opacity: 0.12;
+  pointer-events: none;
+}
+.page-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(80% 70% at 12% 8%, rgba(255,255,255,.08), transparent 62%),
+    radial-gradient(70% 70% at 82% 12%, rgba(242,163,59,.08), transparent 60%);
+  pointer-events: none;
+}
+.page-header > * {
+  position: relative;
+  z-index: 1;
+}
+.page-header .header-content {
+  background: rgba(7, 16, 32, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  box-shadow:
+    0 24px 60px rgba(4, 10, 20, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+.page-header .hero__headline {
+  color: var(--white);
+  text-shadow: 0 6px 18px rgba(4, 10, 20, 0.4);
+}
+.page-header .section-lead {
+  color: rgba(255, 255, 255, 0.85);
+}
+.page-header .hero-meta {
+  background: rgba(7, 16, 32, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.page-header .hero-eyebrow {
+  color: var(--accent);
+  background: rgba(242, 163, 59, 0.12);
+}
+.page-header .hero-trust-points {
+  color: rgba(255, 255, 255, 0.82);
+}
+.page-header .hero-trust-points li::before {
+  color: var(--accent);
+}
+.page-header .header-image-placeholder {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 60px rgba(4, 10, 20, 0.45);
+}</style>
 </body>
 </html>
+
+
