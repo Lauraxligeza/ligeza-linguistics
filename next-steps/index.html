@@ -7,6 +7,7 @@
   <title>Next Steps  Ligeza Linguistics</title>
   <meta name="description" content="Private engagement options for Ligeza Linguistics." />
   <link rel="stylesheet" href="/style.css?v=20260108">
+  <link rel="stylesheet" href="/next-steps/next-steps.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -35,7 +36,7 @@
       <section class="section section--white next-steps-hero">
         <div class="container hero-stack">
           <h1 class="section-title center">Next Steps</h1>
-          <p class="section-lead center">Choose how you�d like to begin.</p>
+          <p class="section-lead center">Choose how you?d like to begin.</p>
         </div>
       </section>
 
@@ -45,8 +46,8 @@
             <article class="service-card next-steps-card next-steps-card--primary">
               <h2>Not sure where to start?</h2>
               <p>
-                If you�re unsure which service fits your situation, you can message us with a specific question.
-                We�ll clarify scope and point you in the right direction � no commitment required.
+                If you?re unsure which service fits your situation, you can message us with a specific question.
+                We?ll clarify scope and point you in the right direction ? no commitment required.
               </p>
               <a href="/contact/" class="btn-primary">Ask a Question</a>
             </article>
@@ -54,8 +55,8 @@
             <article class="service-card next-steps-card">
               <h2>Not sure where to start?</h2>
               <p>
-                If you�re unsure which service fits your situation, you can message us with a specific question.
-                We�ll clarify scope and point you in the right direction � no commitment required.
+                If you?re unsure which service fits your situation, you can message us with a specific question.
+                We?ll clarify scope and point you in the right direction ? no commitment required.
               </p>
               <a href="/contact/" class="btn-primary">Ask a Question</a>
             </article>
@@ -75,7 +76,7 @@
         <div class="container section__narrow section__center">
           <h2 class="section-title section-title--invert center">Audit &amp; Engagement Request</h2>
           <p class="section-lead section-lead--invert center">
-            Share your goals and target markets, and we�ll confirm next steps within 24 hours.
+            Share your goals and target markets, and we?ll confirm next steps within 24 hours.
           </p>
           <form action="../submit.php" method="POST" class="contact-form">
             <input type="hidden" name="request_type" value="audit" />
@@ -124,185 +125,9 @@
     </footer>
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    if (hamburger && navLinks) {
-      hamburger.addEventListener('click', () => {
-        const open = navLinks.classList.toggle('open');
-        hamburger.setAttribute('aria-expanded', open);
-      });
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          if (navLinks.classList.contains('open')) {
-            navLinks.classList.remove('open');
-            hamburger.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-    }
-
-    let lastScroll = 0;
-    const navbar = document.getElementById('navbar');
-    if (navbar) {
-      window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll > 80) {
-          navbar.style.transform = currentScroll > lastScroll ? 'translateY(-100%)' : 'translateY(0)';
-        } else {
-          navbar.style.transform = 'translateY(0)';
-        }
-        lastScroll = currentScroll;
-      });
-    }
-  </script>
+  <script src="/assets/site.js" defer></script>
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-  <style>
-    .next-steps-hero {
-      background: linear-gradient(135deg, #f6f8fb, #eef2f8);
-      padding-top: 110px;
-      padding-bottom: 70px;
-    }
-    .hero-stack {
-      text-align: center;
-    }
-    .next-steps-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      max-width: 1100px;
-    }
-    @media (max-width: 768px) {
-      .next-steps-grid { grid-template-columns: 1fr; }
-    }
-    .next-steps-card {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .next-steps-card h2 {
-      margin: 0 0 4px;
-      font-size: 1.4rem;
-      font-family: var(--font-display);
-      color: var(--bg-dark);
-    }
-    .next-steps-card p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-    .next-steps-card .btn-primary {
-      margin-top: auto;
-      align-self: flex-start;
-    }
-    .next-steps-card--primary {
-      border-color: rgba(242, 163, 59, 0.45);
-      box-shadow: 0 14px 30px rgba(10, 31, 66, 0.12);
-      background: #fffaf2;
-    }
-    .calendly-embed {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    /* Match main hero background */
-  .next-steps-hero {
-    background: linear-gradient(140deg, #0d2040, #0a1833);
-    position: relative;
-    overflow: hidden;
-  }
-  .next-steps-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url("../hero-map-bg.png") center/cover no-repeat;
-    background-color: rgba(12, 31, 60, .5);
-    background-blend-mode: overlay;
-    opacity: .18;
-  }
-  .next-steps-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(80% 80% at 20% 20%, rgba(242,163,59,.18), transparent 60%),
-      radial-gradient(70% 70% at 80% 10%, rgba(255,255,255,.10), transparent 55%);
-    pointer-events: none;
-  }
-  .next-steps-hero .hero-stack {
-    position: relative;
-    z-index: 1;
-  }
-  .next-steps-hero .section-title,
-  .next-steps-hero .section-lead {
-    color: var(--white);
-  }
-  
-/* premium-page-header */
-.page-header {
-  background:
-    radial-gradient(140% 120% at 15% 5%, #1a3158 0%, #0c1f3c 45%, #061127 100%);
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
-}
-.page-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("../hero-map-bg.png") center/cover no-repeat;
-  background-color: rgba(12, 31, 60, 0.5);
-  background-blend-mode: overlay;
-  opacity: 0.12;
-  pointer-events: none;
-}
-.page-header::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(80% 70% at 12% 8%, rgba(255,255,255,.08), transparent 62%),
-    radial-gradient(70% 70% at 82% 12%, rgba(242,163,59,.08), transparent 60%);
-  pointer-events: none;
-}
-.page-header > * {
-  position: relative;
-  z-index: 1;
-}
-.page-header .header-content {
-  background: rgba(7, 16, 32, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  box-shadow:
-    0 24px 60px rgba(4, 10, 20, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-}
-.page-header .hero__headline {
-  color: var(--white);
-  text-shadow: 0 6px 18px rgba(4, 10, 20, 0.4);
-}
-.page-header .section-lead {
-  color: rgba(255, 255, 255, 0.85);
-}
-.page-header .hero-meta {
-  background: rgba(7, 16, 32, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.page-header .hero-eyebrow {
-  color: var(--accent);
-  background: rgba(242, 163, 59, 0.12);
-}
-.page-header .hero-trust-points {
-  color: rgba(255, 255, 255, 0.82);
-}
-.page-header .hero-trust-points li::before {
-  color: var(--accent);
-}
-.page-header .header-image-placeholder {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 24px 60px rgba(4, 10, 20, 0.45);
-}</style>
 </body>
 </html>
 

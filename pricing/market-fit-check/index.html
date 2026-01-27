@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Fit Check | Ligeza Linguistics</title>
+    <meta
+      name="description"
+      content="Market Fit Check intake: assess market viability and decision risk for a single market."
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pricing/market-fit-check.css" />
+    <script src="/assets/site.js" defer></script>
+  </head>
+  <body>
+    <header class="nav-bar" id="navbar">
+      <div class="container nav-inner">
+        <a href="/" class="logo">
+          <img src="/Logo1.png" alt="Ligeza Linguistics Logo" class="nav__logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/services/">Services</a>
+          <a href="/markets/">Markets</a>
+          <a href="/about/">About</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/blog/">Blog</a>
+          <a href="/contact/">Contact</a>
+          <a href="/pricing/" class="btn-nav">View Pricing</a>
+        </nav>
+        <button class="hamburger" aria-label="open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== MARKET FIT HERO ===================== -->
+      <section class="section fit-hero">
+        <div class="container fit-hero-inner">
+          <p class="section-label center">CORE GROWTH SERVICES</p>
+          <h1 class="section-title center">Market Fit Check</h1>
+          <p class="section-subtitle center">
+            This intake helps us assess market viability and decision risk for a single market.
+            The focus is on trust, risk, and value perception, not execution or implementation.
+          </p>
+          <p class="fit-meta center">Investment: &euro;600 - &euro;900 &middot; Timeline: 7-10 business days</p>
+        </div>
+      </section>
+
+      <!-- ===================== MARKET FIT FORM ===================== -->
+      <section class="section fit-form-section">
+        <div class="container fit-grid">
+          <aside class="fit-panel">
+            <h2>What this includes</h2>
+            <ul>
+              <li>Market Fit Summary</li>
+              <li>Risk and opportunity analysis</li>
+              <li>Strategic recommendations</li>
+            </ul>
+            <p class="fit-outcome">
+              Outcome: confidence on whether to proceed and how to reduce decision risk.
+            </p>
+          </aside>
+
+          <div class="fit-form-card">
+            <h2>Tell us about the market</h2>
+            <p>We use this to assess viability, decision friction, and strategic risk.</p>
+
+            <form action="https://formspree.io/f/mbdoqylj" method="POST" class="fit-form">
+              <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="_subject" value="Market Fit Check request" />
+
+              <div class="fit-section-label">1. Company &amp; Context</div>
+
+              <label class="fit-field">
+                <span>Company name</span>
+                <input type="text" name="company_name" required />
+              </label>
+
+              <label class="fit-field">
+                <span>Website URL</span>
+                <input type="url" name="website" placeholder="https://example.com" required />
+              </label>
+
+              <div class="fit-section-label">2. Market in Scope (non-negotiable)</div>
+
+              <label class="fit-field fit-field--full">
+                <span>Which market should we analyse?</span>
+                <input type="text" name="market" required />
+                <small>Please specify one country or clearly defined market only.</small>
+              </label>
+
+              <div class="fit-section-label">3. Offer Context</div>
+
+              <label class="fit-field fit-field--full">
+                <span>What product or service are you planning to offer in this market?</span>
+                <input type="text" name="offer_context" required />
+                <small>Brief description only. Focus on the core offer.</small>
+              </label>
+
+              <div class="fit-section-label">4. Expansion Context (important)</div>
+
+              <label class="fit-field fit-field--full">
+                <span>What best describes your situation?</span>
+                <select name="expansion_context" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="exploring-viable">Exploring whether this market is viable</option>
+                  <option value="preparing-launch">Preparing for a market entry or launch</option>
+                  <option value="active-unclear">Already active, but performance is unclear</option>
+                  <option value="reevaluating">Re-evaluating a market that underperformed</option>
+                </select>
+              </label>
+
+              <div class="fit-section-label">5. Primary Risk Perception</div>
+
+              <fieldset class="fit-field fit-field--full fit-fieldset">
+                <legend>What concerns you most about this market? (select up to 2)</legend>
+                <div class="fit-checks">
+                  <label><input type="checkbox" name="risk_perception" value="trust-credibility" /> Trust and credibility with local buyers</label>
+                  <label><input type="checkbox" name="risk_perception" value="pricing-value" /> Pricing or value perception</label>
+                  <label><input type="checkbox" name="risk_perception" value="cultural-misalignment" /> Cultural or emotional misalignment</label>
+                  <label><input type="checkbox" name="risk_perception" value="competitive-landscape" /> Competitive landscape</label>
+                  <label><input type="checkbox" name="risk_perception" value="demand-quality" /> Uncertainty about demand quality</label>
+                </div>
+                <small>This helps us prioritise the analysis.</small>
+              </fieldset>
+
+              <div class="fit-section-label">6. Market Importance (filter)</div>
+
+              <label class="fit-field fit-field--full">
+                <span>How important is this market in the next 6-12 months?</span>
+                <select name="market_importance" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="critical">Critical to our growth</option>
+                  <option value="important-secondary">Important but secondary</option>
+                  <option value="experimental">Experimental / exploratory</option>
+                </select>
+                <small>"Experimental" is accepted but noted.</small>
+              </label>
+
+              <div class="fit-section-label">7. Decision Expectations (alignment)</div>
+
+              <label class="fit-field fit-field--full">
+                <span>What do you want to be confident about after this engagement?</span>
+                <input type="text" name="decision_expectations" required />
+                <small>
+                  For example: whether to invest further, how to position, or what risks to avoid.
+                </small>
+              </label>
+
+              <div class="fit-section-label">8. Internal Decision Context</div>
+
+              <label class="fit-field fit-field--full">
+                <span>Who will use this analysis to make decisions?</span>
+                <select name="internal_context" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="founder-leadership">Founder / leadership</option>
+                  <option value="marketing-growth">Marketing or growth team</option>
+                  <option value="cross-functional">Cross-functional team</option>
+                </select>
+              </label>
+
+              <div class="fit-section-label">9. Scope Confirmation (non-negotiable)</div>
+
+              <fieldset class="fit-field fit-field--full fit-fieldset fit-scope">
+                <legend>Please confirm the scope of this engagement:</legend>
+                <label class="fit-scope-check">
+                  <input type="checkbox" name="scope_confirmation" value="confirmed" required />
+                  <span>
+                    I understand this engagement includes a Market Fit Summary, risk and opportunity analysis,
+                    and strategic recommendations. It does not include page-level execution, copywriting or design,
+                    or implementation support.
+                  </span>
+                </label>
+              </fieldset>
+
+              <div class="fit-section-label">10. Contact Details</div>
+
+              <label class="fit-field">
+                <span>Your name</span>
+                <input type="text" name="name" required />
+              </label>
+
+              <label class="fit-field">
+                <span>Email address</span>
+                <input type="email" name="email" required />
+              </label>
+
+              <button type="submit" class="btn-primary fit-submit">Submit Market Fit Request</button>
+
+              <p class="fit-note">
+                Thank you. We'll review your information and confirm scope within 1 business day.
+                Once confirmed, you'll receive a payment link and delivery timeline.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Ligeza Linguistics. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

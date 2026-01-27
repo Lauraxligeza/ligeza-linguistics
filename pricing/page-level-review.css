@@ -1,0 +1,230 @@
+.review-hero {
+  padding: 118px 20px 62px;
+}
+
+.review-hero-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-meta {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.review-form-section {
+  padding-top: 30px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(380px, 1.1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.review-panel,
+.review-form-card {
+  background: linear-gradient(180deg, rgba(10, 22, 44, 0.88), rgba(8, 18, 36, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 22px 48px rgba(4, 10, 22, 0.45);
+}
+
+.review-panel h2,
+.review-form-card h2 {
+  margin: 0 0 10px;
+  color: var(--white);
+  font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.7rem);
+}
+
+.review-panel ul {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.review-panel li {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.55;
+}
+
+.review-outcome {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 800;
+}
+
+.review-form-card > p {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 62ch;
+}
+
+.review-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.review-section-label {
+  grid-column: 1 / -1;
+  margin: 6px 0 -2px;
+  padding-top: 6px;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+}
+
+.review-field {
+  display: grid;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+}
+
+.review-field--full {
+  grid-column: 1 / -1;
+}
+
+.review-field small,
+.review-fieldset small {
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(6, 16, 34, 0.72);
+  color: var(--white);
+  font-size: 1rem;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.review-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.review-form input::placeholder,
+.review-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.review-form input:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+  outline: none;
+  border-color: rgba(242, 163, 59, 0.76);
+  background: rgba(8, 20, 42, 0.92);
+  transform: translateY(-1px);
+}
+
+.review-fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.review-fieldset legend {
+  padding: 0 6px;
+  color: var(--white);
+  font-weight: 800;
+}
+
+.review-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 14px;
+}
+
+.review-checks label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.review-checks input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.review-scope-check {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.review-scope-check input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.review-submit {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 6px;
+  min-width: 240px;
+}
+
+.review-note {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .review-hero {
+    padding: 108px 20px 54px;
+  }
+
+  .review-form {
+    grid-template-columns: 1fr;
+  }
+
+  .review-checks {
+    grid-template-columns: 1fr;
+  }
+
+  .review-field--full,
+  .review-submit,
+  .review-note {
+    grid-column: auto;
+  }
+}
+

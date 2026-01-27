@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Snapshot | Ligeza Linguistics</title>
+    <meta
+      name="description"
+      content="Market Snapshot intake: share your target market and context so we can deliver a focused, decision-ready snapshot."
+    />
+    <link rel="stylesheet" href="/style.css?v=20260108" />
+    <link rel="stylesheet" href="/pricing/market-snapshot.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav-bar" id="navbar">
+      <div class="container nav-inner">
+        <a href="/" class="logo">
+          <img src="/Logo1.png" alt="Ligeza Linguistics Logo" class="nav__logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/services/">Services</a>
+          <a href="/markets/">Markets</a>
+          <a href="/about/">About</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/blog/">Blog</a>
+          <a href="/contact/">Contact</a>
+          <a href="/pricing/" class="btn-nav">View Pricing</a>
+        </nav>
+        <button class="hamburger" aria-label="open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header snapshot-hero">
+        <div class="container snapshot-hero__inner">
+          <p class="section-label">MARKET SNAPSHOT</p>
+          <h1 class="section-title center">Market Snapshot Intake</h1>
+          <p class="section-lead center snapshot-hero__lead">
+            Investment: &euro;150 &ndash; &euro;250 &middot; Timeline: 3&ndash;5 business days
+          </p>
+          <p class="section-lead center snapshot-hero__lead">
+            One market. Clear signals. No calls, no revisions, no execution.
+          </p>
+        </div>
+      </section>
+
+      <section class="section snapshot-section">
+        <div class="container snapshot-grid">
+          <aside class="snapshot-panel">
+            <h2 class="snapshot-panel__title">What you get</h2>
+            <div class="snapshot-panel__block">
+              <h3>Scope</h3>
+              <ul>
+                <li>1 market</li>
+                <li>High level analysis of buyer decision logic</li>
+                <li>Trust, risk, and value signals specific to the market</li>
+              </ul>
+            </div>
+            <div class="snapshot-panel__block">
+              <h3>Deliverables</h3>
+              <ul>
+                <li>Short written market snapshot</li>
+                <li>Top 5 common mistakes brands make in this market</li>
+                <li>Key signals to prioritise (and what to ignore)</li>
+              </ul>
+            </div>
+            <p class="snapshot-panel__outcome">
+              Outcome: Clarity on whether the market fits, before you invest further.
+            </p>
+          </aside>
+
+          <div class="snapshot-form-wrap">
+            <h2 class="snapshot-form__title">Tell us about your market</h2>
+            <form action="https://formspree.io/f/xaqoaeeg" method="POST" class="snapshot-form">
+              <input type="text" name="_gotcha" style="display: none" />
+              <input type="hidden" name="_subject" value="Market Snapshot request" />
+
+              <label class="snapshot-field">
+                <span>Your email</span>
+                <input type="email" name="email" required />
+              </label>
+
+              <label class="snapshot-field">
+                <span>Target market</span>
+                <input type="text" name="market" placeholder="e.g., Germany, France, UAE" required />
+              </label>
+
+              <label class="snapshot-field snapshot-field--full">
+                <span>What are you trying to validate?</span>
+                <textarea name="message" rows="5" placeholder="Share context, goals, and what feels uncertain." required></textarea>
+              </label>
+
+              <label class="snapshot-field snapshot-field--full">
+                <span>Website URL</span>
+                <input type="url" name="website" placeholder="https://your-site.com" />
+              </label>
+
+              <button type="submit" class="btn-primary snapshot-submit">Submit Snapshot Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <span class="footer__logo">Ligeza</span>
+          <p>&copy; 2025 Ligeza Linguistics. All rights reserved.</p>
+        </div>
+        <div class="footer__right">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/site.js" defer></script>
+  </body>
+</html>
+

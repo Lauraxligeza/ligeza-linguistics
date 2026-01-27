@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page-Level Conversion Review | Ligeza Linguistics</title>
+    <meta
+      name="description"
+      content="Page-Level Conversion Review intake: share the exact page, market, and constraints so we can diagnose what is blocking decisions."
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pricing/page-level-review.css" />
+    <script src="/assets/site.js" defer></script>
+  </head>
+  <body>
+    <header class="nav-bar" id="navbar">
+      <div class="container nav-inner">
+        <a href="/" class="logo">
+          <img src="/Logo1.png" alt="Ligeza Linguistics Logo" class="nav__logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/services/">Services</a>
+          <a href="/markets/">Markets</a>
+          <a href="/about/">About</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/blog/">Blog</a>
+          <a href="/contact/">Contact</a>
+          <a href="/pricing/" class="btn-nav">View Pricing</a>
+        </nav>
+        <button class="hamburger" aria-label="open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== PAGE-LEVEL HERO ===================== -->
+      <section class="section review-hero">
+        <div class="container review-hero-inner">
+          <p class="section-label center">ENTRY &amp; DIAGNOSTICS</p>
+          <h1 class="section-title center">Page-Level Conversion Review</h1>
+          <p class="section-subtitle center">
+            One page. One market. Clear decision blockers and prioritized fixes.
+          </p>
+          <p class="review-meta center">Investment: &euro;250 - &euro;400 &middot; Timeline: 5 business days</p>
+        </div>
+      </section>
+
+      <!-- ===================== REVIEW FORM ===================== -->
+      <section class="section review-form-section">
+        <div class="container review-grid">
+          <aside class="review-panel">
+            <h2>What this includes</h2>
+            <ul>
+              <li>Annotated feedback on one specific page</li>
+              <li>Priority fixes ranked by impact</li>
+              <li>Clear explanation of what is blocking decisions</li>
+            </ul>
+            <p class="review-outcome">
+              Outcome: you know exactly why the page underperforms and what to fix first.
+            </p>
+          </aside>
+
+          <div class="review-form-card">
+            <h2>Tell us about the page</h2>
+            <p>
+              The more specific you are, the more precise the review will be.
+            </p>
+
+            <form action="https://formspree.io/f/xzdryrky" method="POST" class="review-form">
+              <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="_subject" value="Page-Level Conversion Review request" />
+
+              <div class="review-section-label">1. Company &amp; Context</div>
+
+              <label class="review-field">
+                <span>Company name</span>
+                <input type="text" name="company_name" required />
+              </label>
+
+              <label class="review-field">
+                <span>Website URL</span>
+                <input type="url" name="website" placeholder="https://example.com" required />
+              </label>
+
+              <div class="review-section-label">2. Page in Scope (very important)</div>
+
+              <label class="review-field review-field--full">
+                <span>Which page should we review?</span>
+                <input type="url" name="page_url" placeholder="https://example.com/page" required />
+                <small>Please provide one specific page URL only.</small>
+              </label>
+
+              <div class="review-section-label">3. Target Market</div>
+
+              <label class="review-field review-field--full">
+                <span>Which market is this page intended for?</span>
+                <input type="text" name="target_market" required />
+                <small>One country or clearly defined market.</small>
+              </label>
+
+              <div class="review-section-label">4. Page Purpose</div>
+
+              <label class="review-field review-field--full">
+                <span>What is this page meant to achieve?</span>
+                <select name="page_purpose" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="direct-purchases">Drive direct purchases</option>
+                  <option value="leads-signups">Generate leads / sign-ups</option>
+                  <option value="next-step">Move users to the next step</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+
+              <div class="review-section-label">5. Performance Context</div>
+
+              <label class="review-field review-field--full">
+                <span>What best describes the current situation?</span>
+                <select name="performance_context" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="traffic-decent-conversion-low">Traffic is decent, conversion is low</option>
+                  <option value="traffic-conversion-low">Traffic and conversion are both low</option>
+                  <option value="worse-than-home-market">
+                    Page performs worse than expected compared to home market
+                  </option>
+                  <option value="not-sure-off">Not sure - something feels off</option>
+                </select>
+              </label>
+
+              <div class="review-section-label">6. Main Concern (alignment)</div>
+
+              <fieldset class="review-field review-field--full review-fieldset">
+                <legend>What do you believe is blocking conversions? (select up to 2)</legend>
+                <div class="review-checks">
+                  <label><input type="checkbox" name="blocking_conversions" value="trust-credibility" /> Trust or credibility</label>
+                  <label><input type="checkbox" name="blocking_conversions" value="tone-messaging" /> Tone or messaging</label>
+                  <label><input type="checkbox" name="blocking_conversions" value="structure-flow" /> Structure / flow</label>
+                  <label><input type="checkbox" name="blocking_conversions" value="cta-clarity" /> CTA clarity or placement</label>
+                  <label><input type="checkbox" name="blocking_conversions" value="not-sure" /> Not sure</label>
+                </div>
+                <small>This helps us focus the review.</small>
+              </fieldset>
+
+              <div class="review-section-label">7. Additional Context (optional but useful)</div>
+
+              <label class="review-field review-field--full">
+                <span>Is there anything we should be aware of?</span>
+                <input type="text" name="additional_context" />
+                <small>
+                  Campaign traffic, paid ads, compliance constraints, or internal assumptions.
+                </small>
+              </label>
+
+              <div class="review-section-label">8. Scope Confirmation (non-negotiable)</div>
+
+              <fieldset class="review-field review-field--full review-fieldset review-scope">
+                <legend>Please confirm the scope of this engagement:</legend>
+                <label class="review-scope-check">
+                  <input type="checkbox" name="scope_confirmation" value="confirmed" required />
+                  <span>
+                    I understand this review covers one page only and includes annotated feedback,
+                    prioritised fixes, and explanation of decision blockers. It does not include
+                    implementation, redesign, copywriting, or development.
+                  </span>
+                </label>
+              </fieldset>
+
+              <div class="review-section-label">9. Contact Details</div>
+
+              <label class="review-field">
+                <span>Your name</span>
+                <input type="text" name="name" required />
+              </label>
+
+              <label class="review-field">
+                <span>Email address</span>
+                <input type="email" name="email" required />
+              </label>
+
+              <button type="submit" class="btn-primary review-submit">Submit Review Request</button>
+
+              <p class="review-note">
+                Thank you. We'll review your submission and confirm scope within 1 business day.
+                Once confirmed, you'll receive a payment link and timeline.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Ligeza Linguistics. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Snapshot | Ligeza Linguistics</title>
+    <meta
+      name="description"
+      content="Market Snapshot intake: share your target market and context so we can deliver a focused, decision-ready snapshot."
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pricing/market-snapshot.css" />
+    <script src="/assets/site.js" defer></script>
+  </head>
+  <body>
+    <header class="nav-bar" id="navbar">
+      <div class="container nav-inner">
+        <a href="/" class="logo">
+          <img src="/Logo1.png" alt="Ligeza Linguistics Logo" class="nav__logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/services/">Services</a>
+          <a href="/markets/">Markets</a>
+          <a href="/about/">About</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/blog/">Blog</a>
+          <a href="/contact/">Contact</a>
+          <a href="/pricing/" class="btn-nav">View Pricing</a>
+        </nav>
+        <button class="hamburger" aria-label="open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== MARKET SNAPSHOT HERO ===================== -->
+      <section class="section snapshot-hero">
+        <div class="container snapshot-hero-inner">
+          <p class="section-label center">ENTRY &amp; DIAGNOSTICS</p>
+          <h1 class="section-title center">Market Snapshot Intake</h1>
+          <p class="section-subtitle center">
+            One market. Focused decision logic. Clear signals on where to trust
+            and where to be careful.
+          </p>
+          <p class="snapshot-meta center">Investment: &euro;150 - &euro;250 &middot; Timeline: 3-5 business days</p>
+        </div>
+      </section>
+
+      <!-- ===================== SNAPSHOT FORM ===================== -->
+      <section class="section snapshot-form-section">
+        <div class="container snapshot-grid">
+          <aside class="snapshot-panel">
+            <h2>What you get</h2>
+            <ul>
+              <li>High-level buyer decision logic for one market</li>
+              <li>Trust, risk, and value signals to prioritize</li>
+              <li>Top 5 mistakes brands make in this market</li>
+              <li>Clear guidance on what to ignore</li>
+            </ul>
+            <p class="snapshot-outcome">
+              Outcome: clarity on whether the market fits before you invest
+              further.
+            </p>
+            <p class="snapshot-notes">No calls. No revisions. No execution.</p>
+          </aside>
+
+          <div class="snapshot-form-card">
+            <h2>Tell us about your target market</h2>
+            <p>
+              Share a few key details so the snapshot is grounded in your
+              real growth context.
+            </p>
+
+            <form action="https://formspree.io/f/xaqoaeeg" method="POST" class="snapshot-form">
+              <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="_subject" value="Market Snapshot request" />
+
+              <label class="snapshot-field">
+                <span>Your email</span>
+                <input type="email" name="email" required />
+              </label>
+
+              <label class="snapshot-field">
+                <span>Which market are you targeting?</span>
+                <input type="text" name="market" placeholder="e.g., Germany (DACH), France, UAE" required />
+              </label>
+
+              <label class="snapshot-field">
+                <span>What are you trying to decide?</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="What feels unclear, risky, or high-stakes right now?"
+                  required
+                ></textarea>
+              </label>
+
+              <label class="snapshot-field">
+                <span>Website URL</span>
+                <input type="url" name="website" placeholder="https://example.com" />
+              </label>
+
+              <button type="submit" class="btn-primary snapshot-submit">Submit Snapshot Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Ligeza Linguistics. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
