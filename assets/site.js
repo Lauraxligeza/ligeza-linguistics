@@ -1,6 +1,6 @@
 const yearEl = document.getElementById('year');
 if (yearEl) {
-  yearEl.textContent = '2025';
+  yearEl.textContent = new Date().getFullYear();
 }
 
 let lastScroll = 0;

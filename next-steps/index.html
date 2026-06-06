@@ -36,7 +36,7 @@
       <section class="section section--white next-steps-hero">
         <div class="container hero-stack">
           <h1 class="section-title center">Next Steps</h1>
-          <p class="section-lead center">Choose how you?d like to begin.</p>
+          <p class="section-lead center">Choose how you'd like to begin.</p>
         </div>
       </section>
 
@@ -46,19 +46,19 @@
             <article class="service-card next-steps-card next-steps-card--primary">
               <h2>Not sure where to start?</h2>
               <p>
-                If you?re unsure which service fits your situation, you can message us with a specific question.
-                We?ll clarify scope and point you in the right direction ? no commitment required.
+                If you're unsure which service fits your situation, you can message us with a specific question.
+                We'll clarify scope and point you in the right direction - no commitment required.
               </p>
               <a href="/contact/" class="btn-primary">Ask a Question</a>
             </article>
 
             <article class="service-card next-steps-card">
-              <h2>Not sure where to start?</h2>
+              <h2>Ready to get started?</h2>
               <p>
-                If you?re unsure which service fits your situation, you can message us with a specific question.
-                We?ll clarify scope and point you in the right direction ? no commitment required.
+                If you already know you want support, skip the back-and-forth and send your request directly.
+                Share your goals, market focus, and timeline, and we'll confirm the best next step.
               </p>
-              <a href="/contact/" class="btn-primary">Ask a Question</a>
+              <a href="#request" class="btn-primary">Request an Audit</a>
             </article>
 
             <article class="service-card next-steps-card">
@@ -76,9 +76,11 @@
         <div class="container section__narrow section__center">
           <h2 class="section-title section-title--invert center">Audit &amp; Engagement Request</h2>
           <p class="section-lead section-lead--invert center">
-            Share your goals and target markets, and we?ll confirm next steps within 24 hours.
+            Share your goals and target markets, and we'll confirm next steps within 24 hours.
           </p>
-          <form action="../submit.php" method="POST" class="contact-form">
+          <form action="https://formspree.io/f/mgowypjk" method="POST" class="contact-form">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="New next steps audit request — Ligeza Linguistics">
             <input type="hidden" name="request_type" value="audit" />
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Work Email" required>
@@ -115,7 +117,7 @@
       <div class="container footer__inner">
         <div class="footer__left">
           <span class="footer__logo">Ligeza</span>
-          <p>Ac <span id="year"></span> Ligeza Linguistics. All rights reserved.</p>
+          <p>&copy; <span id="year"></span> Ligeza Linguistics. All rights reserved.</p>
         </div>
         <div class="footer__right">
           <a href="#">Privacy Policy</a>
