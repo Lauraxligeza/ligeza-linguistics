@@ -1,0 +1,234 @@
+body {
+  background: #0c1f3c;
+}
+
+.section {
+  background: #0c1f3c;
+}
+
+.section-title,
+.section-subtitle,
+.section-lead {
+  color: var(--white);
+}
+
+.align-hero {
+  padding: 118px 20px 62px;
+}
+
+.align-hero-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.align-meta {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.align-form-section {
+  padding-top: 44px;
+}
+
+.align-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(380px, 1.1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.align-panel,
+.align-form-card {
+  background: linear-gradient(180deg, rgba(10, 22, 44, 0.88), rgba(8, 18, 36, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 22px 48px rgba(4, 10, 22, 0.45);
+}
+
+.align-panel h2,
+.align-form-card h2 {
+  margin: 0 0 10px;
+  color: var(--white);
+  font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.7rem);
+}
+
+.align-panel ul {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.align-panel li {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.55;
+}
+
+.align-outcome {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 800;
+}
+
+.align-form-card > p {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 66ch;
+}
+
+.align-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.align-section-label {
+  grid-column: 1 / -1;
+  margin: 14px 0 4px;
+  padding-top: 2px;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+}
+
+.align-field {
+  display: grid;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+}
+
+.align-field--full {
+  grid-column: 1 / -1;
+}
+
+.align-field small,
+.align-fieldset small {
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.align-form input,
+.align-form select,
+.align-form textarea {
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(6, 16, 34, 0.72);
+  color: var(--white);
+  font-size: 1rem;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.align-form input:focus,
+.align-form select:focus,
+.align-form textarea:focus {
+  outline: none;
+  border-color: rgba(242, 163, 59, 0.76);
+  background: rgba(8, 20, 42, 0.92);
+  transform: translateY(-1px);
+}
+
+.align-fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.align-fieldset legend {
+  padding: 0 6px;
+  color: var(--white);
+  font-weight: 800;
+}
+
+.align-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 14px;
+}
+
+.align-checks label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.align-checks input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.align-scope-check {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.align-scope-check input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.align-submit {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 6px;
+  min-width: 280px;
+}
+
+.align-note {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .align-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .align-hero {
+    padding: 108px 20px 54px;
+  }
+
+  .align-form {
+    grid-template-columns: 1fr;
+  }
+
+  .align-checks {
+    grid-template-columns: 1fr;
+  }
+
+  .align-field--full,
+  .align-submit,
+  .align-note {
+    grid-column: auto;
+  }
+}
+

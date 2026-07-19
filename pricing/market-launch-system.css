@@ -1,0 +1,234 @@
+body {
+  background: #0c1f3c;
+}
+
+.section {
+  background: #0c1f3c;
+}
+
+.section-title,
+.section-subtitle,
+.section-lead {
+  color: var(--white);
+}
+
+.launch-hero {
+  padding: 118px 20px 62px;
+}
+
+.launch-hero-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.launch-meta {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.launch-form-section {
+  padding-top: 44px;
+}
+
+.launch-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(380px, 1.1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.launch-panel,
+.launch-form-card {
+  background: linear-gradient(180deg, rgba(10, 22, 44, 0.88), rgba(8, 18, 36, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 22px 48px rgba(4, 10, 22, 0.45);
+}
+
+.launch-panel h2,
+.launch-form-card h2 {
+  margin: 0 0 10px;
+  color: var(--white);
+  font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.7rem);
+}
+
+.launch-panel ul {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.launch-panel li {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.55;
+}
+
+.launch-outcome {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 800;
+}
+
+.launch-form-card > p {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 64ch;
+}
+
+.launch-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.launch-section-label {
+  grid-column: 1 / -1;
+  margin: 14px 0 4px;
+  padding-top: 2px;
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+}
+
+.launch-field {
+  display: grid;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+}
+
+.launch-field--full {
+  grid-column: 1 / -1;
+}
+
+.launch-field small,
+.launch-fieldset small {
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.launch-form input,
+.launch-form select,
+.launch-form textarea {
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(6, 16, 34, 0.72);
+  color: var(--white);
+  font-size: 1rem;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.launch-form input:focus,
+.launch-form select:focus,
+.launch-form textarea:focus {
+  outline: none;
+  border-color: rgba(242, 163, 59, 0.76);
+  background: rgba(8, 20, 42, 0.92);
+  transform: translateY(-1px);
+}
+
+.launch-fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.launch-fieldset legend {
+  padding: 0 6px;
+  color: var(--white);
+  font-weight: 800;
+}
+
+.launch-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 14px;
+}
+
+.launch-checks label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.launch-checks input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.launch-scope-check {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.launch-scope-check input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.launch-submit {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 6px;
+  min-width: 260px;
+}
+
+.launch-note {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .launch-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .launch-hero {
+    padding: 108px 20px 54px;
+  }
+
+  .launch-form {
+    grid-template-columns: 1fr;
+  }
+
+  .launch-checks {
+    grid-template-columns: 1fr;
+  }
+
+  .launch-field--full,
+  .launch-submit,
+  .launch-note {
+    grid-column: auto;
+  }
+}
+
